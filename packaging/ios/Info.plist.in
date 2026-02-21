@@ -31,25 +31,48 @@
     <key>CFBundleAllowMixedLocalizations</key>
     <true/>
 
+    <key>MinimumOSVersion</key>
+    <string>@CMAKE_OSX_DEPLOYMENT_TARGET@</string>
+
     <key>LSRequiresIPhoneOS</key>
     <true/>
 
+    <key>UIDeviceFamily</key>
+    <array>
+        <integer>1</integer>
+        <integer>2</integer>
+    </array>
+
     <key>LSSupportsOpeningDocumentsInPlace</key>
-	<true/>
+    <true/>
 
     <key>UIFileSharingEnabled</key>
-	<true/>
+    <true/>
 
     <key>UILaunchStoryboardName</key>
     <string>LaunchScreen</string>
+
+    <key>UIRequiresFullScreen</key>
+    <true/>
+
+    <key>UIApplicationSupportsIndirectInputEvents</key>
+    <true/>
 
     <key>NSMicrophoneUsageDescription</key>
     <string>Mixxx requires microphone access for microphone and vinyl input.</string>
 
     <key>NSAppleMusicUsageDescription</key>
-    <string>Mixxx accesses the Apple Music library to presents its tracks and playlists in the library.</string>
+    <string>Mixxx accesses the Apple Music library to present tracks and playlists in the library.</string>
 
     <key>UISupportedInterfaceOrientations</key>
+    <array>
+        <string>UIInterfaceOrientationPortrait</string>
+        <string>UIInterfaceOrientationPortraitUpsideDown</string>
+        <string>UIInterfaceOrientationLandscapeLeft</string>
+        <string>UIInterfaceOrientationLandscapeRight</string>
+    </array>
+
+    <key>UISupportedInterfaceOrientations~ipad</key>
     <array>
         <string>UIInterfaceOrientationPortrait</string>
         <string>UIInterfaceOrientationPortraitUpsideDown</string>

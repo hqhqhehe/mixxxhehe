@@ -2280,6 +2280,11 @@ if(APPLE AND MACOS_BUNDLE)
   set(MIXXX_INSTALL_DOCDIR "${MIXXX_INSTALL_DATADIR}")
   set(MIXXX_INSTALL_LICENSEDIR "${MIXXX_INSTALL_DATADIR}/licenses")
 elseif(APPLE AND IOS)
+  # iOS builds rely on the vcpkg iOS triplet path set above:
+  # -DCMAKE_TOOLCHAIN_FILE=<vcpkg>/scripts/buildsystems/vcpkg.cmake
+  # -DVCPKG_TARGET_TRIPLET=arm64-ios (device) or arm64-ios-simulator
+  # -DMIXXX_VCPKG_ROOT=<vcpkg>
+  # See docs/ios-mvp.md for a complete MVP setup.
   set(MIXXX_INSTALL_BINDIR "${CMAKE_INSTALL_BINDIR}")
   set(
     IOS_BUNDLE_NAME
